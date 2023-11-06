@@ -2,14 +2,12 @@ library(data.table)
 library(VariantAnnotation)
 library(GenomicRanges)
 
-cat("\n @ pepap-functions loaded : \"filterVCF\", \"purgeVCF\"\n\n",sep="")
+#>> @pepap : AGILENT / ILLUMINA sequenced regions in mm10 / ensembl format
+load( "agi.mm10.gr.rda",   verbose=T )
+load( "agi.ensembl.gr.rda",verbose=T )
+load( "Twist_Mouse_Exome_Target_Rev1_7APR20.gr.rda",verbose=T )
 
-#!#load( "/storage/brno1-cerit/home/pepap/SOTIO/ET-mutAnal/S21_032/Exome_regions/Twist_Mouse_Exome_Target_Rev1_7APR20.gr.rda",verbose=T )
-load( "/storage/brno3-cerit/home/pepap/Exome_regions/agi.mm10.gr.rda",   verbose=T )
-load( "/storage/brno3-cerit/home/pepap/Exome_regions/agi.ensembl.gr.rda",verbose=T )
-load( "/storage/brno3-cerit/home/pepap/Exome_regions/Twist_Mouse_Exome_Target_Rev1_7APR20.gr.rda",verbose=T )
-
-#= (1)
+#>> @pepap : filter PASSED variantions
 filterVCF <- function( VCFfile,FILTER.PASS=T,sele.gr=Twist_Mouse_Exome_Target_Rev1_7APR20.gr ) {
 
  cat( " > Reading VCF-file :\n    ",VCFfile,"\n",sep="" )
@@ -29,7 +27,7 @@ filterVCF <- function( VCFfile,FILTER.PASS=T,sele.gr=Twist_Mouse_Exome_Target_Re
 
 }
 
-#= (2)
+#>> @pepap : remove listed SNPS / INDELs
 purgeVCF  <- function( VCFfile,SNPrmv=NULL,INDrmv=NULL ) {
 
  cat( " > Reading VCF-file :\n    ",VCFfile,"\n",sep="" )
@@ -69,4 +67,3 @@ purgeVCF  <- function( VCFfile,SNPrmv=NULL,INDrmv=NULL ) {
  return( inp.vcf )
 
 }
-
