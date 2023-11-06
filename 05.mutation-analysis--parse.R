@@ -1,44 +1,47 @@
+#>> @pepap : load functions for variant filtering
+source("04.mutation-analysis--filterVCF.R")
 
-source("~/Scripts/R_func/filterVCF.R")
-cat( "\n",sep="" )
-
-NATIVE_VARS <- "not_needed"
+#>> @pepap : 
 if ( !exists("NATIVE_VARS") ) {
-cat( " ** READING FVB_NJ & C57BL_6NJ native SNPs/INDELs **\n",sep="" )
-fvb.SNP.vcf <- readVcf("/storage/brno3-cerit/home/pepap/Annotations/SNP-InDels-mice-strains/FVB_NJ.mgp.v5.snps.dbSNP142.vcf.gz")
-fvb.IND.vcf <- readVcf("/storage/brno3-cerit/home/pepap/Annotations/SNP-InDels-mice-strains/FVB_NJ.mgp.v5.indels.dbSNP142.normed.vcf.gz")
-cbl.SNP.vcf <- readVcf("/storage/brno3-cerit/home/pepap/Annotations/SNP-InDels-mice-strains/C57BL_6NJ.mgp.v5.snps.dbSNP142.vcf.gz")
-cbl.IND.vcf <- readVcf("/storage/brno3-cerit/home/pepap/Annotations/SNP-InDels-mice-strains/C57BL_6NJ.mgp.v5.indels.dbSNP142.normed.vcf.gz")
-NATIVE_VARS <- "loaded"
-cat( "\n",sep="" )
+ cat( " ** READING FVB_NJ & C57BL_6NJ native SNPs/INDELs **\n",sep="" )
+ fvb.SNP.vcf <- readVcf("FVB_NJ.mgp.v5.snps.dbSNP142.vcf.gz")
+ fvb.IND.vcf <- readVcf("FVB_NJ.mgp.v5.indels.dbSNP142.normed.vcf.gz")
+ cbl.SNP.vcf <- readVcf("C57BL_6NJ.mgp.v5.snps.dbSNP142.vcf.gz")
+ cbl.IND.vcf <- readVcf("C57BL_6NJ.mgp.v5.indels.dbSNP142.normed.vcf.gz")
+ NATIVE_VARS <- "loaded"
+ cat( "\n",sep="" )
 }
 
-STOR="/storage/brno1-cerit/home/pepap/SOTIO/MH--mutAnal-20230725/BAM/STRELKA/"
-VCFS <- c(
- "01.SAMPLE1/results/variants/variants.vcf.gz",
- "02.SAMPLE2/results/variants/variants.vcf.gz",
- "03.SAMPLE3/results/variants/variants.vcf.gz"
-)
-CONS <- c( "SAMPLE1","SAMPLE2","SAMPLE3" )
+VCFS="path/to/STRELKA/results/variants/variants.vcf.gz"
+#>> @pepap : assign mouse-strain (C57BL_6NJ,FVB_NJ)
+CONS <- c( "ID8","BR5" )
 
-if (F) {
+#>> @pepap : filter PASSED variants
+if (T) {
 cat( " ** READING STRELKA RESULTS **\n",sep="" )
 mergedVars.dt <- data.table()
-#!#i <- 1
 for ( i in seq_along(VCFS) ) {
  cat( "    -> ",CONS[i],"\n",sep="" )
-#!# tmp.vcf <- filterVCF( VCFfile=paste0(STOR,VCFS[i]),FILTER.PASS=T,sele.gr=Twist_Mouse_Exome_Target_Rev1_7APR20.gr )
  tmp.vcf <- filterVCF( VCFfile=paste0(STOR,VCFS[i]),FILTER.PASS=T,sele.gr=agi.ensembl.gr )
  cat( "       INPUT vs. FILTERED : ",length(tmp.vcf)," / ",sep="" )
  tmp.dt  <- data.table( VAR=names(tmp.vcf),REF=sub( "[/].*$","",sub( "^.*[_]","",names(tmp.vcf) ) ),ALT=sub( "^.*[/]","",names(tmp.vcf) ) )
  tmp.dt[["TYPE"]]                                          <- "IND"
  tmp.dt[ ( nchar(REF)==1 ) & ( nchar(ALT)==1 ) ][["TYPE"]] <- "SNP"
 
-  tmp.ovr <- findOverlaps( query=rowRanges(tmp.vcf),subject=rowRanges(cbl.SNP.vcf),ignore.strand=T )
-  rmv.var <- tmp.dt[ unique(queryHits(tmp.ovr)) ][ TYPE=="SNP" ][["VAR"]]
-  tmp.ovr <- findOverlaps( query=rowRanges(tmp.vcf),subject=rowRanges(cbl.IND.vcf),ignore.strand=T )
-  rmv.var <- c( rmv.var,tmp.dt[ unique(queryHits(tmp.ovr)) ][ TYPE=="IND" ][["VAR"]] )
-  tmp.vcf <- tmp.vcf[ !( names(tmp.vcf) %in% rmv.var ) ]
+  if ( substr( x=CONS[i],start=1,stop=3 )=="ID8" ) {
+   tmp.ovr <- findOverlaps( query=rowRanges(tmp.vcf),subject=rowRanges(cbl.SNP.vcf),ignore.strand=T )
+   rmv.var <- tmp.dt[ unique(queryHits(tmp.ovr)) ][ TYPE=="SNP" ][["VAR"]]
+   tmp.ovr <- findOverlaps( query=rowRanges(tmp.vcf),subject=rowRanges(cbl.IND.vcf),ignore.strand=T )
+   rmv.var <- c( rmv.var,tmp.dt[ unique(queryHits(tmp.ovr)) ][ TYPE=="IND" ][["VAR"]] )
+   tmp.vcf <- tmp.vcf[ !( names(tmp.vcf) %in% rmv.var ) ]
+  }
+  if ( substr( x=CONS[i],start=1,stop=3 )=="BR5" ) {
+   tmp.ovr <- findOverlaps( query=rowRanges(tmp.vcf),subject=rowRanges(fvb.SNP.vcf),ignore.strand=T )
+   rmv.var <- tmp.dt[ unique(queryHits(tmp.ovr)) ][ TYPE=="SNP" ][["VAR"]]
+   tmp.ovr <- findOverlaps( query=rowRanges(tmp.vcf),subject=rowRanges(fvb.IND.vcf),ignore.strand=T )
+   rmv.var <- c( rmv.var,tmp.dt[ unique(queryHits(tmp.ovr)) ][ TYPE=="IND" ][["VAR"]] )
+   tmp.vcf <- tmp.vcf[ !( names(tmp.vcf) %in% rmv.var ) ]
+  }
 
  cat( length(tmp.vcf)," (",substr( x=CONS[i],start=1,stop=3 ),")\n",sep="" )
  mrg.tmp.dt <-
@@ -58,13 +61,13 @@ for ( i in seq_along(VCFS) ) {
  cat( "\n",sep="" )
 }
 save( mergedVars.dt,file="mergedVars.dt.rda" )
-#!#i <- (i+1)
 } else {
 load( "mergedVars.dt.rda",verbose=T )
 }
 
-load( "/storage/brno3-cerit/home/pepap/Exome_regions/targetReg.agi.mm10.gr.rda",                                   verbose=T )
-load( "/storage/brno1-cerit/home/pepap/SOTIO/MH-mutAnal/BAM/00.SangerQual/00.FVB-BR5_vs_mm10-ID8/gc_annot.dt.rda", verbose=T )
+#>> @pepap : filter variants from sequenced probes of ILLUMINA / AGILENT sequencing experiment
+load( "targetReg.agi.mm10.gr.rda",verbose=T )
+#load( "targetReg.Twist_Mouse_Exome_Target_Rev1_7APR20.mm10.gr.rda",verbose=T )
 targetReg.gr            <- targetReg.agi.mm10.gr
 TOTAL_TARR_WIDTH_MB     <- sum( width(targetReg.gr) )/1e06
 PCDSS_TARR_WIDTH_MB     <- sum( width(targetReg.gr[ grepl( pattern="protein_coding",x=mcols(targetReg.gr)[["ANNOT"]] ) ]) )/1e06
@@ -78,9 +81,8 @@ tmp.bmrt.attributes  <-
   "cdna_start","distance_to_transcript"
  )
 
-if (F) {
-
-source("/storage/brno11-elixir/home/pepap/Scripts/R_func/biomaRt.SNPs.R")
+#>> @pepap : annotate variants
+library(biomaRt)
 
 xFROM=1
 rsid.dt <- data.table()
@@ -95,13 +97,12 @@ for ( xTO in c(seq(from=1,to=length(tmp.bmrt.values)-1,by=10),length(tmp.bmrt.va
 
 save( rsid.dt,file="rsid.dt.rda" )
 
-} else {
-
-load( "/storage/brno1-cerit/home/pepap/2017-Split/GENCODE/gencode.vM24.chr_patch_hapl_scaff.annotation.corrSeqLevels.trx2gene.PC.rda",verbose=T )
+#>> @pepap : load GENCODE gene annotation
+load( "gencode.vM24.chr_patch_hapl_scaff.annotation.corrSeqLevels.trx2gene.PC.rda",verbose=T )
 gencode.vM24.chr_patch_hapl_scaff.annotation.corrSeqLevels.trx2gene.PC[["tid_short"]] <-
  gencode.vM24.chr_patch_hapl_scaff.annotation.corrSeqLevels.trx2gene.PC[,sub( "[.].*$","",transcript_id )]
 
-load( "rsid.dt.rda",verbose=T )
+#load( "rsid.dt.rda",verbose=T )
 rsid.dt[ is.na(ensembl_transcript_stable_id) ][["ensembl_transcript_stable_id"]] <- as.character("")
 rsid.dt[ is.na(ensembl_gene_stable_id)       ][["ensembl_gene_stable_id"]]       <- as.character("")
 rsid.dt[ is.na(ensembl_type)                 ][["ensembl_type"]]                 <- as.character("")
@@ -118,6 +119,7 @@ rsid.dt <-
  )
 rsid.dt <- rsid.dt[ !is.na(trx_len) & !is.na(refsnp_id) ]
 
+#>> @pepap : not interesting genes - lncRNAs, TEC transcripts ..
 MANUALLY_REMOVED=c("ENSMUST00000177875","ENSMUST00000179982","ENSMUST00000179264")
 
 mergedVars.annot.dt <- merge( mergedVars.dt,rsid.dt[ !( ensembl_transcript_stable_id %in% MANUALLY_REMOVED ) ],by="VAR",all.x=T,sort=F )
@@ -126,6 +128,7 @@ mergedVars.annot.dt[ nchar(REF)>1 & nchar(ALT)<=1 ][["TYPE"]] <- "DEL"
 mergedVars.annot.dt[ nchar(ALT)>1 & nchar(REF)<=1 ][["TYPE"]] <- "INS"
 save( mergedVars.annot.dt,file="mergedVars.annot.dt.rda" )
 
+#>> @pepap : report all samples, prepare TMB table
 library(openxlsx)
 
 xwb <- createWorkbook()
@@ -159,3 +162,4 @@ saveWorkbook(   wb=xwb,file="MH--mutAnal--Appendix.20230728.xlsx",overwrite=T )
 
 }
 
+save( TMB.dt,file="TMB.dt.rda" )
