@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#>> @pepap : download reference genome
 wget --show-progress ftp://ftp-mouse.sanger.ac.uk/ref/GRCm38_68.fa.gz
 wget --show-progress ftp://ftp-mouse.sanger.ac.uk/ref/GRCm38_68.fa.fai
 
@@ -13,6 +14,7 @@ SUFF0006=".mgp.v5.snps.dbSNP142.vcf.gz.md5"
 SUFF0007=".mgp.v5.snps.dbSNP142.vcf.gz.tbi"
 SUFF0008=".mgp.v5.snps.dbSNP142.vcf.gz.tbi.md5"
 
+#>> @pepap : download SNPs & INDELs for selected mice strains
 MSTRAINS=( BALB_cJ C3H_HeJ C57BL_6NJ FVB_NJ )
 
 for mstr in `echo ${MSTRAINS[@]}`
@@ -32,4 +34,3 @@ wget --show-progress ${FTP_STOR}/${mstr}${SUFF0008}
 echo ""
 
 done
-
