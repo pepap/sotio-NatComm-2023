@@ -1,0 +1,20 @@
+id	Population	Group
+1	T cells	Cell population
+2	CD8 T cells	Cell population
+3	Cytotoxic cells	Cell population
+4	B-cells	Cell population
+5	NK cells	Cell population
+6	NK CD56dim cells	Cell population
+7	DC	Cell population
+9	Mast cells	Cell population
+11	Th1 cells	Cell population
+12	T cell activation	Cell function
+13	T cell survival	Cell function
+16	Immunosuppresssion	Cell function
+18	PD1	Inhibitory receptor
+19	PDL1	Inhibitory receptor
+20	PDL2	Inhibitory receptor
+21	CTLA4	Inhibitory receptor
+22	TIM3	Inhibitory receptor
+23	TIGIT	Inhibitory receptor
+24	FOXP3	Inhibitory receptor
