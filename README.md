@@ -17,7 +17,7 @@ Script detailing the pre-processing of Visium data is “Spatial_transcriptomics
 
 The R scripts used to generate the figures can be found in the individual folders.
 
-Other scripts are ordered and labeled by the analysis.
+Other scripts are ordered and labeled by the propriate step of the analysis.
 
 Data used in our analysis are also provided :
 + annotations and target regions
