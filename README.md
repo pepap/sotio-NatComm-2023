@@ -2,12 +2,13 @@
 
 This repository host the code used in our paper titled "Tertiary lymphoid structures and B cells determine clinically relevant T cell phenotypes in ovarian cancer." currently in revision.
 
-## ABSTRACT
+## Abstract
 
 Intratumoral tertiary lymphoid structures (TLSs) have been associated with improved outcome in a variety of cancer patient cohorts, reflecting the key role of TLSs in the initiation of tumor-targeting immunity. Here, we demonstrate that high-grade serous ovarian carcinoma (HGSOC) contains distinct immune aggregates with varying degrees of organization and maturation. Specifically, mature TLSs (mTLS) as forming only in 16% of HGSOCs with relatively elevated tumor mutational burden (TMB) were associated with an increased intratumoral density of CD8+ effector T (TEFF) cells  and TIM3+PD1+, hence poorly immune checkpoint inhibitor (ICI)-sensitive, CD8+ T cells. Converesely, CD8+ T cells from immunologically hot tumors like non-small cell lung carcinoma (NSCLC) were enriched in ICI-responsive TCF1+ PD1+ T cells. Spatial B-cell profiling identified patterns of in situ maturation and differentiation that were associated with mTLSs. Moreover, B-cell depletion promoted signs of a dysfunctional CD8+ T cell compartment among tumor-infiltrating lymphocytes from freshly isolated HGSOC and NSCLC biopsies. Taken together, our data demonstrate that – at odds with NSCLC – HGSOC is associated with a low density of follicular helper T cells and thus develops a limited number of mTLS that might be insufficient to preserve a ICI-sensitive TCF1+PD1+ CD8+ T cell phenotype. These findings point to key quantitative and qualitative differences between mTLSs in ICI-responsive vs ICI-irresponsive neoplasms that may guide the development of alternative immunotherapies for patients with HGSOC.
 
 Experimental design
-![Experimental design]()
+![](![kasikova](https://github.com/pepap/sotio-NatComm-2023/assets/7227977/48799f3f-ec36-47aa-a477-c65b11d88a3a)
+)
 
 ### Pre-processing of the Spatial transcriptomic data
 
