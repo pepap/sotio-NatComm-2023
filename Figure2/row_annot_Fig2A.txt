@@ -1,0 +1,88 @@
+ID	Immunotype
+BLK	B cells
+CR2	B cells
+HLA-DOB	B cells
+TNFRSF17	B cells
+FAS	cytotoxicity
+FASLG	cytotoxicity
+GNLY	cytotoxicity
+GZMA	cytotoxicity
+GZMB	cytotoxicity
+KLRB1	cytotoxicity
+KLRD1	cytotoxicity
+KLRK1	cytotoxicity
+PRF1	cytotoxicity
+CCL13	DC
+CCL22	DC
+CD209	DC
+LAMP3	DC
+NPR1	DC
+PPFIBP2	DC
+CD19	Immune population
+CD3E	Immune population
+CD4	Immune population
+CD68	Immune population
+CD8A	Immune population
+MS4A1	Immune population
+PTPRC	Immune population
+CD244	Immunosupression
+CTLA4	Immunosupression
+EOMES	Immunosupression
+FOXP3	Immunosupression
+HAVCR2	Immunosupression
+IDO1	Immunosupression
+IL10	Immunosupression
+LAG3	Immunosupression
+NOS2	Immunosupression
+PDCD1	Immunosupression
+PTGER4	Immunosupression
+SMAD7	Immunosupression
+TGFB1	Immunosupression
+TIGIT	Immunosupression
+CD226	NK cells
+CD69	NK cells
+CXCL16	NK cells
+FOXJ1	NK cells
+IL15RA	NK cells
+IL18	NK cells
+IL21R	NK cells
+KLRC1	NK cells
+KLRF1	NK cells
+LILRB1	NK cells
+NCR1	NK cells
+NECTIN2	NK cells
+PLA2G6	NK cells
+PVR	NK cells
+TNFSF10	NK cells
+ULBP2	NK cells
+XCL2	NK cells
+CCL5	T cell activation
+CCR4	T cell activation
+CCR5	T cell activation
+CD28	T cell activation
+CD38	T cell activation
+CD40	T cell activation
+CD40LG	T cell activation
+CD80	T cell activation
+CD86	T cell activation
+ICOS	T cell activation
+LTA	T cell activation
+TNFRSF18	T cell activation
+AKT3	TEM
+CCR2	TEM
+CXCL10	Th1
+CXCR3	Th1
+IFI35	Th1
+IFNG	Th1
+IL12A	Th1
+IL15	Th1
+IL2	Th1
+IL2RA	Th1
+STAT4	Th1
+TBX21	Th1
+TNF	Th1
+CXCR6	Th2
+GATA3	Th2
+IL6	Th2
+SMAD2	Th2
+STAT6	Th2

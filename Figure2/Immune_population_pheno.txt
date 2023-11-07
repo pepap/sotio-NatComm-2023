@@ -1,0 +1,22 @@
+population	group
+T cells	Cell population
+CD8 T cells	Cell population
+Cytotoxic lymphocytes	Cell population
+B lineage	Cell population
+NK cells	Cell population
+Monocytic lineage	Cell population
+Myeloid dendritic cells	Cell population
+Immunosuppression	Cell function
+T cell activation	Cell function
+T cell survival	Cell function
+Regulatory T cells	Cell function
+MHCI	Cell function
+myeloid cell chemotaxis	Cell function
+12-chemokine signature	Cell function
+PD1	Inhibitory receptor
+PDL1	Inhibitory receptor
+PDL2	Inhibitory receptor
+LAG3	Inhibitory receptor
+TIM3	Inhibitory receptor
+CTLA4	Inhibitory receptor
+TIGIT	Inhibitory receptor
