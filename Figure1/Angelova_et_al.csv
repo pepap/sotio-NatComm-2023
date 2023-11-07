@@ -1,0 +1,813 @@
+Name,CellType
+AKNA,Activated B cells
+ARHGAP25,Activated B cells
+CCL21,Activated B cells
+CD180,Activated B cells
+CD2,Activated B cells
+CD27,Activated B cells
+CD37,Activated B cells
+CD38,Activated B cells
+CLEC17A,Activated B cells
+CLEC9A,Activated B cells
+CLECL1,Activated B cells
+FCMR,Activated B cells
+RIPOR2,Activated B cells
+GIMAP4,Activated B cells
+MAP4K1,Activated B cells
+PAX5,Activated B cells
+TNFRSF17,Activated B cells
+TRAF3IP3,Activated B cells
+ANLN,Activated CD4
+BRIP1,Activated CD4
+BUB1B,Activated CD4
+KNL1,Activated CD4
+CCNB1,Activated CD4
+CCNB2,Activated CD4
+CCNE2,Activated CD4
+CEP55,Activated CD4
+CKAP2L,Activated CD4
+DLGAP5,Activated CD4
+DTL,Activated CD4
+E2F8,Activated CD4
+ECT2,Activated CD4
+ESCO2,Activated CD4
+EXO1,Activated CD4
+EXOC6,Activated CD4
+FBXO5,Activated CD4
+FIGNL1,Activated CD4
+HELLS,Activated CD4
+HMMR,Activated CD4
+IARS,Activated CD4
+KIF11,Activated CD4
+KIF18A,Activated CD4
+KIF20A,Activated CD4
+KNTC1,Activated CD4
+MAD2L1,Activated CD4
+MASTL,Activated CD4
+MTHFD2,Activated CD4
+NCAPG2,Activated CD4
+NCAPH,Activated CD4
+NEIL3,Activated CD4
+NUF2,Activated CD4
+PRC1,Activated CD4
+PSAT1,Activated CD4
+RTKN2,Activated CD4
+MPZL1,Activated CD8
+MRPS16,Activated CD8
+ADRM1,Activated CD8
+AHSA1,Activated CD8
+C1GALT1C1,Activated CD8
+CCT5,Activated CD8
+CCT6B,Activated CD8
+CETN3,Activated CD8
+CSE1L,Activated CD8
+EIF2S1,Activated CD8
+GAL,Activated CD8
+GEMIN6,Activated CD8
+GPT2,Activated CD8
+PCLAF,Activated CD8
+MND1,Activated CD8
+PCNA,Activated CD8
+PTRH2,Activated CD8
+RFC5,Activated CD8
+SPC25,Activated CD8
+TIMM13,Activated CD8
+TIMM8B,Activated CD8
+TK1,Activated CD8
+TUBB1,Activated CD8
+TXNDC17,Activated CD8
+ADAM19,Central memory CD4
+AHNAK,Central memory CD4
+AIM2,Central memory CD4
+COL4A1,Central memory CD4
+CYLD,Central memory CD4
+DPEP2,Central memory CD4
+EPHA4,Central memory CD4
+FYN,Central memory CD4
+IL6R,Central memory CD4
+IPCEF1,Central memory CD4
+KLF10,Central memory CD4
+MAL,Central memory CD4
+MALT1,Central memory CD4
+NXN,Central memory CD4
+OPTN,Central memory CD4
+PLCL2,Central memory CD4
+PNRC1,Central memory CD4
+SMAD4,Central memory CD4
+SPOCK2,Central memory CD4
+TRIB2,Central memory CD4
+TXK,Central memory CD4
+ADAM23,Central memory CD8
+ATP2B4,Central memory CD8
+BCL2L11,Central memory CD8
+CD300A,Central memory CD8
+CD80,Central memory CD8
+CHN1,Central memory CD8
+F2R,Central memory CD8
+F8,Central memory CD8
+GABARAPL1,Central memory CD8
+GPR183,Central memory CD8
+KLRK1,Central memory CD8
+MSC,Central memory CD8
+PYHIN1,Central memory CD8
+RCAN2,Central memory CD8
+RGS1,Central memory CD8
+SLAMF1,Central memory CD8
+SLFN11,Central memory CD8
+ZEB2,Central memory CD8
+BST2,Cytotoxic cells
+BTN3A2,Cytotoxic cells
+IL10RA,Cytotoxic cells
+KLRB1,Cytotoxic cells
+LAT2,Cytotoxic cells
+LILRA2,Cytotoxic cells
+SELL,Cytotoxic cells
+SLAMF6,Cytotoxic cells
+SLAMF7,Cytotoxic cells
+CCL3L3,DC
+GPR109B,DC
+C1QC,DC
+CCDC88A,DC
+CCL13,DC
+CCL3L1,DC
+CD300E,DC
+CD86,DC
+CLEC1A,DC
+CLEC4C,DC
+CLEC5A,DC
+CLIC2,DC
+CSF2RA,DC
+FAM49A,DC
+FCGR1A,DC
+FN1,DC
+FSTL1,DC
+GPX3,DC
+HLA-DQA2,DC
+INHBA,DC
+LGMN,DC
+NGFR,DC
+PDGFRL,DC
+PDPN,DC
+PRKAR2B,DC
+SIGLEC1,DC
+SIGLEC5,DC
+SLAMF9,DC
+STAB1,DC
+THBD,DC
+TNFAIP2,DC
+TTYH2,DC
+UBD,DC
+VCAM1,DC
+BMI1,Effector memory CD4
+CASP3,Effector memory CD4
+CNOT10,Effector memory CD4
+COPB2,Effector memory CD4
+DARS,Effector memory CD4
+EXOSC9,Effector memory CD4
+EZH2,Effector memory CD4
+GDE1,Effector memory CD4
+IFT74,Effector memory CD4
+KLF5,Effector memory CD4
+NDUFB9,Effector memory CD4
+NUP205,Effector memory CD4
+SHCBP1,Effector memory CD4
+XRCC6,Effector memory CD4
+FCGR2C,Effector memory CD8
+HAPLN3,Effector memory CD8
+JAKMIP1,Effector memory CD8
+ADGRG5,Effector memory CD8
+APOBEC3H,Effector memory CD8
+ARHGAP10,Effector memory CD8
+ATP10D,Effector memory CD8
+BIRC3,Effector memory CD8
+C3AR1,Effector memory CD8
+CCL4,Effector memory CD8
+CD244,Effector memory CD8
+CD55,Effector memory CD8
+CFLAR,Effector memory CD8
+CMKLR1,Effector memory CD8
+DAPP1,Effector memory CD8
+WHRN,Effector memory CD8
+DRAM1,Effector memory CD8
+EFNA5,Effector memory CD8
+FCGR3A,Effector memory CD8
+FCRL6,Effector memory CD8
+FGR,Effector memory CD8
+GZMH,Effector memory CD8
+HLA-DMB,Effector memory CD8
+HLA-DPA1,Effector memory CD8
+HLA-DPB1,Effector memory CD8
+IFI16,Effector memory CD8
+IKZF2,Effector memory CD8
+IL15,Effector memory CD8
+IL2RB,Effector memory CD8
+KLRD1,Effector memory CD8
+LY96,Effector memory CD8
+NFKBIA,Effector memory CD8
+PLXNC1,Effector memory CD8
+PPP4R1,Effector memory CD8
+PTPN22,Effector memory CD8
+RGS18,Effector memory CD8
+SETD7,Effector memory CD8
+SH2D1B,Effector memory CD8
+SLA2,Effector memory CD8
+STXBP1,Effector memory CD8
+TLR5,Effector memory CD8
+TYROBP,Effector memory CD8
+SIGLEC8,Eosinophil
+CCL24,Eosinophil
+CFD,Eosinophil
+CREB3,Eosinophil
+EGR1,Eosinophil
+EPX,Eosinophil
+FBXO16,Eosinophil
+HFE,Eosinophil
+HIVEP1,Eosinophil
+HIVEP2,Eosinophil
+MBP,Eosinophil
+PRNP,Eosinophil
+RNASE2,Eosinophil
+RNASE3,Eosinophil
+S100A4,Eosinophil
+ATP6V1A,iDC
+C1QB,iDC
+CHST11,iDC
+CSF1,iDC
+DPYD,iDC
+FNDC3B,iDC
+GRP,iDC
+IL1RN,iDC
+INPP5F,iDC
+LPL,iDC
+LPXN,iDC
+MMD,iDC
+PLAU,iDC
+PLCB2,iDC
+RAB38,iDC
+RDX,iDC
+RRAGD,iDC
+TACSTD2,iDC
+TGM2,iDC
+TIMD4,iDC
+DCSTAMP,iDC
+NCF1B,Immature B cells
+BANK1,Immature B cells
+CD22,Immature B cells
+CYBB,Immature B cells
+ETS1,Immature B cells
+NIBAN3,Immature B cells
+FCRL1,Immature B cells
+FCRL2,Immature B cells
+FCRL3,Immature B cells
+FCRL5,Immature B cells
+FCRLA,Immature B cells
+HDAC9,Immature B cells
+HLA-DOB,Immature B cells
+HLA-DQA1,Immature B cells
+HVCN1,Immature B cells
+RUBCN,Immature B cells
+NCF1,Immature B cells
+P2RY10,Immature B cells
+PNOC,Immature B cells
+SP100,Immature B cells
+STAP1,Immature B cells
+TAGAP,Immature B cells
+TXNIP,Immature B cells
+ZCCHC2,Immature B cells
+AIF1,Macrophages
+CCL1,Macrophages
+CCL14,Macrophages
+CCL26,Macrophages
+CD163,Macrophages
+CD300LB,Macrophages
+CNR1,Macrophages
+CNR2,Macrophages
+CPM,Macrophages
+CSF3R,Macrophages
+ENG,Macrophages
+FCAR,Macrophages
+IGF1,Macrophages
+IL34,Macrophages
+L1CAM,Macrophages
+LILRA1,Macrophages
+LILRA5,Macrophages
+LRP1,Macrophages
+MS4A7,Macrophages
+MS4A8,Macrophages
+TREM1,Macrophages
+TREML1,Macrophages
+EDGRE1,Mast cells
+TAL1,Mast cells
+ACSL4,Mast cells
+ADAMTS3,Mast cells
+ADCYAP1,Mast cells
+ARHGAP15,Mast cells
+ATP8B4,Mast cells
+MCEMP1,Mast cells
+CASQ1,Mast cells
+CLC,Mast cells
+CMA1,Mast cells
+CPA3,Mast cells
+CTSG,Mast cells
+DUSP14,Mast cells
+EGR3,Mast cells
+FST,Mast cells
+HDC,Mast cells
+HEY1,Mast cells
+KRT1,Mast cells
+LXN,Mast cells
+MEIS2,Mast cells
+MS4A2,Mast cells
+MS4A3,Mast cells
+NLRP3,Mast cells
+NTRK1,Mast cells
+PLAT,Mast cells
+PTGS1,Mast cells
+PTGS2,Mast cells
+RGS16,Mast cells
+SCG2,Mast cells
+CAVIN2,Mast cells
+SERPINB2,Mast cells
+SIGLEC14,Mast cells
+SIGLEC6,Mast cells
+SLC18A2,Mast cells
+SLC24A3,Mast cells
+RBM10,Mast cells
+TIE1,Mast cells
+TIMP1,Mast cells
+TNFAIP6,Mast cells
+TSPAN4,Mast cells
+VAT1,Mast cells
+ATP5PO,mDC
+CBX1,mDC
+ENSA,mDC
+DNAJC15,mDC
+FOXN3,mDC
+PRCP,mDC
+SSB,mDC
+TPMT,mDC
+FCER2,MDSC
+CEACAM8,MDSC
+COX2,MDSC
+TMEM255Bÿ,MDSC
+FCER2,MDSC
+FLT1,MDSC
+NFSF13,MDSC
+PPP1R2P4,MDSC
+TFGFB1,MDSC
+TFGFB2,MDSC
+TFGFB3,MDSC
+TFGFB5,MDSC
+VTCN1,MDSC
+C11orf96,MDSC
+KIT,MDSC
+ITGAM,MDSC
+ITGAX,MDSC
+IL4R,MDSC
+FUT4,MDSC
+CD1D,MDSC
+CR2,MDSC
+PECAM1,MDSC
+CR1,MDSC
+SPN,MDSC
+SUPT20H,MDSC
+HLA-DRB1,MDSC
+IDO1,MDSC
+IL12RB1,MDSC
+IL1R1,MDSC
+IL4R,MDSC
+PRPF31,MDSC
+ADORA3,MDSC
+ARG1,MDSC
+BIN2,MDSC
+C1orf162,MDSC
+CAPS,MDSC
+CD14,MDSC
+CD163L1,MDSC
+CD274,MDSC
+CD40,MDSC
+CD44,MDSC
+CR2,MDSC
+CTR9,MDSC
+EBP,MDSC
+FCGRT,MDSC
+FERMT3,MDSC
+FLOT1,MDSC
+GIMAP7,MDSC
+GLI4,MDSC
+GNA15,MDSC
+GPR34,MDSC
+GPSM3,MDSC
+IKZF1,MDSC
+IL13,MDSC
+IL18BP,MDSC
+INPP5D,MDSC
+ITGA3,MDSC
+KDR,MDSC
+KRIT1,MDSC
+LGALS3,MDSC
+MGAT4A,MDSC
+NAIP,MDSC
+NEK3,MDSC
+NOG,MDSC
+PARVG,MDSC
+PDRG1,MDSC
+PECAM1,MDSC
+PIK3R5,MDSC
+PSAP,MDSC
+PTGES2,MDSC
+PTPRE,MDSC
+RNASE1,MDSC
+S100A8,MDSC
+S100A9,MDSC
+SELPLG,MDSC
+SLA,MDSC
+SLC36A1,MDSC
+SLC44A1,MDSC
+ST8SIA4,MDSC
+STAT3,MDSC
+STAT6,MDSC
+TBXAS1,MDSC
+TFRC,MDSC
+TGFB2,MDSC
+TPP1,MDSC
+RUNX2,Memory B cells
+AICDA,Memory B cells
+CCNA2,Memory B cells
+CDKN3,Memory B cells
+CLCN5,Memory B cells
+ENPP1,Memory B cells
+FCER1A,Memory B cells
+FCRL4,Memory B cells
+MYC,Memory B cells
+SORL1,Memory B cells
+SOX5,Memory B cells
+STAT5A,Memory B cells
+STAT5B,Memory B cells
+TLR9,Memory B cells
+BASP1,Monocytes
+CD300LF,Monocytes
+UBE2D3,Monocytes
+ACTR3,Monocytes
+ANXA5,Monocytes
+ARPC2,Monocytes
+ATP6V1B2,Monocytes
+DAZAP2,Monocytes
+EIF4A1,Monocytes
+EIF4G2,Monocytes
+EMP3,Monocytes
+FCN1,Monocytes
+FTL,Monocytes
+GABARAP,Monocytes
+HIF1A,Monocytes
+LITAF,Monocytes
+NCOA4,Monocytes
+OLR1,Monocytes
+RAB1A,Monocytes
+RHOA,Monocytes
+SAT1,Monocytes
+SDCBP,Monocytes
+SRGN,Monocytes
+TEK,Monocytes
+TMBIM6,Monocytes
+EMR4P,Neutrophils
+SEC14L1,Neutrophils
+C5AR2,Neutrophils
+MSRB1,Neutrophils
+ABTB1,Neutrophils
+AMPD2,Neutrophils
+CAMP,Neutrophils
+FPR1,Neutrophils
+FPR2,Neutrophils
+MAEA,Neutrophils
+PROK2,Neutrophils
+SLC25A37,Neutrophils
+TNFSF14,Neutrophils
+TREML4,Neutrophils
+VNN2,Neutrophils
+XPO6,Neutrophils
+SIGLEC9,NK
+AKT3,NK
+AXL,NK
+CDH2,NK
+CRTAM,NK
+CYTH1,NK
+FASLG,NK
+GRB2,NK
+KLRG1,NK
+LILRB5,NK
+LST1,NK
+MAPK4,NK
+NOTCH3,NK
+PIK3CG,NK
+PILRA,NK
+PLCG2,NK
+SIGLEC7,NK
+HCP5,NK56 bright
+KRT86,NK56 bright
+SMCO4,NK56 bright
+HDGFL2,NK56 bright
+DYNLL1,NK56 bright
+MLST8,NK56 bright
+MYL6B,NK56 bright
+TAX1BP3,NK56 bright
+FAM27C,NK56 dim
+KIR2DS4,NK56 dim
+AKR7A3,NK56 dim
+CLTB,NK56 dim
+GLS2,NK56 dim
+GPRC5C,NK56 dim
+GRIN1,NK56 dim
+HLA-E,NK56 dim
+KLHL21,NK56 dim
+KRT80,NK56 dim
+MPL,NK56 dim
+PHRF1,NK56 dim
+PORCN,NK56 dim
+PQBP1,NK56 dim
+PSMC4,NK56 dim
+TEX264,NK56 dim
+UPP1,NK56 dim
+KIR2DL1,NKT
+KIR2DL3,NKT
+KIR3DL1,NKT
+KIR3DL2,NKT
+BTN2A2,NKT
+CD101,NKT
+GNLY,NKT
+KLRC1,NKT
+MICB,NKT
+NCR1,NKT
+NFATC2IP,NKT
+TNFRSF11A,NKT
+HIGD1A,pDC
+CBX6,pDC
+DAB2,pDC
+DDX17,pDC
+IDH3A,pDC
+IL3RA,pDC
+MAGED1,pDC
+NUCB2,pDC
+OFD1,pDC
+OGT,pDC
+PDIA4,pDC
+SERTAD2,pDC
+SIRPA,pDC
+SPCS3,pDC
+TMED2,pDC
+TMX1,pDC
+UGCG,pDC
+ZDHHC17,pDC
+CCL3,T cells
+LILRA3,T cells
+NAPSB,T cells
+BATF,T cells
+BTLA,T cells
+CCL11,T cells
+CCL17,T cells
+CCL22,T cells
+CCL5,T cells
+CCL7,T cells
+CCR1,T cells
+CCR3,T cells
+CCR4,T cells
+CCR8,T cells
+CD1A,T cells
+CD1B,T cells
+CD1C,T cells
+CD1D,T cells
+CD1E,T cells
+CD247,T cells
+CD28,T cells
+CD3D,T cells
+CD3E,T cells
+CD3G,T cells
+CD69,T cells
+CD8A,T cells
+CXCR1,T cells
+CXCR4,T cells
+CXCR5,T cells
+CXCR6,T cells
+FGFBP2,T cells
+FLT3,T cells
+FOSL1,T cells
+GRAP2,T cells
+HLA-DRA,T cells
+HLA-DRB1,T cells
+HLA-DRB5,T cells
+HRH2,T cells
+IFNG,T cells
+IL10,T cells
+IL12B,T cells
+IL12RB1,T cells
+IL12RB2,T cells
+IL18R1,T cells
+IL18RAP,T cells
+IL1B,T cells
+IL21,T cells
+IL21R,T cells
+IL24,T cells
+IL26,T cells
+IL27,T cells
+IL2RA,T cells
+IL6,T cells
+IL7,T cells
+IRF4,T cells
+IRF8,T cells
+ITGAL,T cells
+ITK,T cells
+JAK2,T cells
+JAK3,T cells
+LAIR1,T cells
+LAT,T cells
+LAX1,T cells
+LCK,T cells
+LCP2,T cells
+LILRA4,T cells
+LILRB1,T cells
+LILRB2,T cells
+LILRB3,T cells
+LILRB4,T cells
+MS4A4A,T cells
+NFATC1,T cells
+NFKB2,T cells
+P2RY14,T cells
+PIK3CD,T cells
+POU2F2,T cells
+PRF1,T cells
+RUNX3,T cells
+SPI1,T cells
+STAT1,T cells
+STAT4,T cells
+TNF,T cells
+TPRG1,T cells
+TSLP,T cells
+UBASH3B,T cells
+ZAP70,T cells
+CD83,TFH
+B3GAT1,TFH
+BCL6,TFH
+CCR7,TFH
+CD200,TFH
+CD84,TFH
+CDK5R1,TFH
+FGF2,TFH
+GPR18,TFH
+PDCD1,TFH
+ADA2,TGD
+ACP5,TGD
+C1orf54,TGD
+CARD8,TGD
+CCL18,TGD
+CD209,TGD
+CD33,TGD
+CLEC10A,TGD
+CLEC4A,TGD
+CSF1R,TGD
+FCER1G,TGD
+FCGR2A,TGD
+FCGR2B,TGD
+FCGR3B,TGD
+FGF7,TGD
+FGL2,TGD
+FPR3,TGD
+GM2A,TGD
+GPNMB,TGD
+HCK,TGD
+HK3,TGD
+LIPA,TGD
+MARCO,TGD
+MMP12,TGD
+MNDA,TGD
+MRC1,TGD
+MS4A6A,TGD
+NPL,TGD
+PLA2G7,TGD
+PLEK,TGD
+RAB23,TGD
+RNASE6,TGD
+SDC2,TGD
+SLAMF8,TGD
+SLC15A3,TGD
+SLC38A6,TGD
+SLC7A7,TGD
+SPP1,TGD
+TFEC,TGD
+TM6SF1,TGD
+TNFSF8,TGD
+TREM2,TGD
+TRPV2,TGD
+ADGRE5,Th1
+ADAM8,Th1
+CCR5,Th1
+CD151,Th1
+CD48,Th1
+CD52,Th1
+CD53,Th1
+CD6,Th1
+CD68,Th1
+CD7,Th1
+CD96,Th1
+EBI3,Th1
+GPR84,Th1
+HAVCR2,Th1
+ICAM1,Th1
+ICAM3,Th1
+IGSF6,Th1
+IL12A,Th1
+IL7R,Th1
+IRF1,Th1
+ITGA4,Th1
+ITGAM,Th1
+ITGAX,Th1
+ITGB2,Th1
+ITGB4,Th1
+ITGB7,Th1
+LTA,Th1
+LTB,Th1
+METRNL,Th1
+P2RX5,Th1
+PTPRC,Th1
+SPN,Th1
+TBX21,Th1
+TLR6,Th1
+TNFRSF1A,Th1
+TNFRSF9,Th1
+TRAT1,Th1
+C2CD4B,Th17
+CEACAM3,Th17
+TNIP2,Th17
+AOC1,Th17
+B4GALNT4,Th17
+C2CD4A,Th17
+CA2,Th17
+CCDC65,Th17
+CHRM3,Th17
+DOC2B,Th17
+F12,Th17
+FURIN,Th17
+GPR25,Th17
+IL17A,Th17
+IL17C,Th17
+IL17F,Th17
+IL17RC,Th17
+IL17RE,Th17
+IL23A,Th17
+ILDR1,Th17
+LONRF3,Th17
+LTK,Th17
+MOCOS,Th17
+SH2D6,Th17
+TRAF3IP2,Th17
+YBX2,Th17
+ASB2,Th2
+CALD1,Th2
+CCR2,Th2
+CSRP2,Th2
+DAPK1,Th2
+DLC1,Th2
+DNAJC12,Th2
+DUSP6,Th2
+GATA3,Th2
+GNAI1,Th2
+HTR2B,Th2
+LAMP3,Th2
+NRP2,Th2
+OSBPL1A,Th2
+PDE4B,Th2
+PHLDA1,Th2
+PLA2G4A,Th2
+RAB27B,Th2
+RBMS3,Th2
+RNF125,Th2
+SIGLEC10,Th2
+SKAP1,Th2
+SMAD2,Th2
+TMPRSS3,Th2
+UBASH3A,Th2
+IL9R,Treg
+CCL19,Treg
+CD34,Treg
+CD72,Treg
+CTLA4,Treg
+FOXP3,Treg
+GADD45B,Treg
+GEM,Treg
+IL1RL1,Treg
+MADCAM1,Treg
+MYH10,Treg
+NCF2,Treg
+RCSD1,Treg
+RYR1,Treg
+SELE,Treg
+SELP,Treg
+SFRP1,Treg
+SIT1,Treg
+TIGIT,Treg
+TLR10,Treg
+TLR2,Treg
+TLR7,Treg
+TLR8,Treg
+TRAF1,Treg
+WIPF1,Treg
+TGFB1,Treg
